@@ -1,0 +1,7 @@
+1. SELECT * FROM kawahedukasi WHERE gaji = (SELECT MAX(gaji) FROM kawahedukasi);
+
+2. SELECT * FROM kawahedukasi WHERE kelas = 'BACKEND' AND gaji = 6500000 AND nilai = (SELECT MAX(nilai) FROM kawahedukasi);
+
+3. SELECT COUNT(id) AS 'peserta_front_end' FROM kawahedukasi WHERE kelas = 'FRONTEND';
+
+4. SELECT MAX(jumlah_kehadiran) AS jumlah_kehadiran_tertinggi, MAX(nilai) AS nilai_tertinggi FROM kawahedukasi WHERE kelas = 'FRONTEND'
